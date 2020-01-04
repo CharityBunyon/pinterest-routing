@@ -12,6 +12,7 @@ import Home from '../components/pages/Home/Home';
 import NewBoard from '../components/pages/NewBoard/NewBoard';
 import Auth from '../components/pages/Auth/Auth';
 import SingleBoard from '../components/pages/SingleBoard/SingleBoard';
+import Navbar from '../components/shared/Navbar/Navbar';
 
 const PublicRoute = ({ component: Component, authed, ...rest }) => {
   const routeChecker = (props) => (authed === false ? <Component {...props} {...rest}/> : <Redirect to={{ pathname: '/', state: { from: props.location } }} />);
@@ -48,6 +49,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Router>
+          <Navbar authed={authed}/>
           <Switch>
             <PrivateRoute path="/" exact component={Home} authed={authed}/>
             <PrivateRoute path="/board/new" exact component={NewBoard} authed={authed}/>
