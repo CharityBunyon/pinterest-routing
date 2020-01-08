@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import pinShape from '../../../helpers/propz/pinShape';
 import './Pins.scss';
 
