@@ -1,4 +1,4 @@
-@import './variables';
+@import 'variables.scss';
 
 
 body {
@@ -8,6 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+   background-color: $lightblue;
 }
 
 code {
