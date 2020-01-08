@@ -1,4 +1,5 @@
 @import 'variables.scss';
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
 
 body {
@@ -8,7 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-   background-color: $lightblue;
+   background: $lightblue;
 }
 
 code {
@@ -17,6 +18,8 @@ code {
 }
 
 
-.App {
-  background-color: $lightblue;
-}
+// html {
+//   background-color: $lightblue;
+// }
+
+
